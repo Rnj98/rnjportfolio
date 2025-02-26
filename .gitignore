@@ -1,0 +1,43 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output (Vite)
+dist/
+dist-ssr/
+
+# Environment variables (Sensitive files)
+*.env
+*.env.local
+*.env.development
+*.env.production
+*.env.test
+
+# Editor & OS-specific files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Jest & Cypress (if testing)
+coverage/
+cypress/screenshots/
+cypress/videos/
+
+# ESLint & Tailwind cache (if using)
+.eslintcache
+.tailwind/

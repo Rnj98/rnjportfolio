@@ -1,0 +1,181 @@
+/* body {
+  background-image: url("/src/components/assets/background-img.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-p {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 600px;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-content img {
+  width: 25%;
+height: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .mainContact {
+  max-width: 100%;
+  padding: 20px;
+  }
+  .divGreeter p {
+  max-width: 100%;
+  }
+  input,
+  textarea {
+  width: 100%;
+  }
+  .send-button {
+  width: 100%;
+  }
+  .links {
+  margin: 10px 0;
+  justify-content: center;
+  }
+  .p-links {
+  left: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+  }
+  .link {
+  width: 80px;
+  }
+  }
+  
+  @media only screen and (min-width: 425px) and (max-width: 767px) {
+  .mainContact {
+  max-width: 100%;
+  padding: 20px;
+  }
+  .divGreeter p {
+  max-width: 100%;
+  }
+  input,
+  textarea {
+  width: 80%;
+  }
+  .send-button {
+  width: 80%;
+  }
+  .links {
+  margin: 10px 0;
+  justify-content: center;
+  }
+  .p-links {
+  left: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+  }
+  .link {
+  width: 80px;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mainContact {
+  max-width: 90%;
+  }
+  .divGreeter p {
+  max-width: 60%;
+  }
+  input,
+  textarea {
+  width: 60%;
+  }
+  .send-button {
+  width: 60%;
+  }
+  .links {
+  margin: 10px 0;
+  justify-content: center;
+  }
+  .p-links {
+  left: 0;
+  font-size: 25px;
+  margin-bottom: 5px;
+  }
+  .link {
+  width: 100px;
+  }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mainContact {
+  max-width: 80%;
+  }
+  .divGreeter p {
+  max-width: 50%;
+  }
+  input,
+  textarea {
+  width: 50%;
+  }
+  .send-button {
+  width: 50%;
+  }
+  .links {
+  margin: 20px 0;
+  justify-content: flex-start;
+  }
+  .p-links {
+  left: 35px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  }
+  .link {
+  width: 100px;
+  }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  .mainContact {
+  max-width: 65%;
+  }
+  .divGreeter p {
+  max-width: 50%;
+  }
+  input,
+  textarea {
+  width: 45%;
+  }
+  .send-button {
+  width: 47.25%;
+  }
+  .links {
+  margin: 20px 0;
+  justify-content: flex-start;
+  }
+  .p-links {
+  left: 35px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  }
+  .link {
+  width: 100px;
+  }
+  .home-content img {
+    max-width: 30%;
+  }
+  }
+@media only screen and (min-width: 1441px) {
+  .home-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .home-content img {
+    max-width: 20%;
+  }
+  .home-p {
+    font-size: 25px;
+    max-width: 50%;
+  }
+} */

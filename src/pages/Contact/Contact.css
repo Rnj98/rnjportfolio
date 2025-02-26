@@ -1,0 +1,217 @@
+.mainContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.divGreeter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.divGreeter p {
+  max-width: 50%;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input,
+textarea {
+  display: block;
+  width: 45%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 2px black solid;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+textarea {
+  height: 80px;
+}
+.send-button {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  background-color: #4CAF50;
+  color: rgb(255, 244, 244);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 47.25%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.link {
+  width: 100px;
+  height: auto;
+}
+
+.p-links {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact-p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 425px) {
+  .mainContact {
+  max-width: 100%;
+  padding: 20px;
+  }
+  .divGreeter p {
+  max-width: 100%;
+  }
+  input,
+  textarea {
+  width: 100%;
+  }
+  .send-button {
+  width: 100%;
+  }
+  .links {
+  margin: 10px 0;
+  justify-content: center;
+  }
+  .p-links {
+  left: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+  }
+  .link {
+  width: 80px;
+  }
+  }
+  
+  @media only screen and (min-width: 425px) and (max-width: 767px) {
+  .mainContact {
+  max-width: 100%;
+  padding: 20px;
+  }
+  .divGreeter p {
+  max-width: 100%;
+  }
+  input,
+  textarea {
+  width: 80%;
+  }
+  .send-button {
+  width: 80%;
+  }
+  .links {
+  margin: 10px 0;
+  justify-content: center;
+  }
+  .p-links {
+  left: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+  }
+  .link {
+  width: 80px;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mainContact {
+  max-width: 90%;
+  }
+  .divGreeter p {
+  max-width: 60%;
+  }
+  input,
+  textarea {
+  width: 60%;
+  }
+  .send-button {
+  width: 60%;
+  }
+  .links {
+  margin: 10px 0;
+  justify-content: center;
+  }
+  .p-links {
+  left: 0;
+  font-size: 25px;
+  margin-bottom: 5px;
+  }
+  .link {
+  width: 100px;
+  }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mainContact {
+  max-width: 80%;
+  }
+  .divGreeter p {
+  max-width: 50%;
+  }
+  input,
+  textarea {
+  width: 50%;
+  }
+  .send-button {
+  width: 50%;
+  }
+  .links {
+  margin: 20px 0;
+  justify-content: flex-start;
+  }
+  .p-links {
+  left: 35px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  }
+  .link {
+  width: 100px;
+  }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  .mainContact {
+  max-width: 65%;
+  }
+  .divGreeter p {
+  max-width: 50%;
+  }
+  input,
+  textarea {
+  width: 45%;
+  }
+  .send-button {
+  width: 47.25%;
+  }
+  .links {
+  margin: 20px 0;
+  justify-content: flex-start;
+  }
+  .p-links {
+  left: 35px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  }
+  .link {
+  width: 100px;
+  }
+  }
+  
+  @media only screen and (min-width: 1441px) {
+  .mainContact {
+  max-width: 60%;
+  }
+}

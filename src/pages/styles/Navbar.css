@@ -1,0 +1,100 @@
+.nav button {
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .nav button:hover {
+    text-decoration: underline;
+  }  
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 6%;
+    padding: 15px;
+    gap: 20px;
+}
+
+
+@media only screen and (max-width: 426px) {
+  .navContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vh;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav button {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 1vh;
+  }
+  .nav button {
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 1vh;
+  }
+  .nav button {
+    font-size: 35px;
+    font-weight: 900;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .nav button {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 25px;
+  }
+  .nav button {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
