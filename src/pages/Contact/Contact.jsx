@@ -1,51 +1,69 @@
-import React from "react";
-import "./Contact.css";
-// import github from "../../assets/github-mark.png"
-// import linkedin from "../../assets/linkedin.png"
-import { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 
-export default function Contact() {
-  const form = useRef()
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_nqjv8zr', 'template_86kf1lj', form.current, 'ekm6Z0DdZYnP8Odbe')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset()
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <form ref={form} onSubmit={sendEmail} className="main-form">
-    <div className="mainContact">
-      <div className="divGreeter">
-        <p className="contact-p">
-          I would love to hear from you! If you have any questions, or would
-          like a copy of my resume, please send me a message here!
-        </p>
-        <input type="text" placeholder="Name" name="user_name"/>
-        <input type="text" placeholder="Email" name="user_email"/>
-        <textarea placeholder="Message" name="message"/>
-        <input type="submit" value="Send" className="send-button"/>
-      </div>
-      <div className="contactForm">
-        <p className="p-links">You can also find me on:</p>
-      <div className="links">
-        <a href="https://github.com/rnj98" target="_blank" rel="noreferrer">
-          <img src={github} className="link"alt="github_logo"/>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ryan-jolley-444a97243/"
-          target="_blank" rel="noreferrer">
-          <img src={linkedin} className="link"alt="linkedin_logo"/>
-        </a>
-      </div>
-      </div>
+    <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
+      <h2>Contact Me</h2>
+      <form onSubmit={handleSubmit}>
+        <div style={{ marginBottom: '10px' }}>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+          />
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+          />
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            style={{ width: '100%', padding: '8px', marginTop: '5px', height: '100px' }}
+          />
+        </div>
+        <button type="submit" style={{ padding: '10px 20px' }}>Submit</button>
+      </form>
     </div>
-    </form>
   );
-}
+};
+
+export default Contact;
